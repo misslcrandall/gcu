@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Heritage Hats</title>
+
+    <!-- Link the CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ezg7hff.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+    <!-- Header -->
+ <header>
+  <div class="header-container">
+    <img src="./Image/new white var.png" style="width:25%; height:25%; object-fit:cover;" alt="Western hat on display" class="responsive-item">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Hero Slider -->
+    <section id="home" class="slider-hero">
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <img src="./Image/Hero.jpeg" alt="Western hat on display">
+    <div class="overlay">
+      <h2>Welcome to Heritage Hats</h2>
+      <p>Explore timeless styles inspired by the Southwest.</p>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <img src="./Image/Western Felt Hats.jpeg" alt="Hat collection">
+    <div class="overlay">
+      <h2>Crafted for Arizona</h2>
+      <p>Hats that keep Arizona covered</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+    <img src="./Image/Services.png" alt="Hat fitting service">
+    <div class="overlay">
+      <h2>Custom Fittings</h2>
+      <p>Find the perfect fit with our expert team</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider-hero .slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      slide.style.opacity = '0';
+    });
+    slides[index].classList.add('active');
+    slides[index].style.opacity = '1';
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize first slide
+  showSlide(currentSlide);
+
+  // Optional: auto-slide every 6 seconds
+  setInterval(nextSlide, 6000);
+</script>
+
+
+      <!-- About Section -->
+      <section id="about">
+        <p>
+          Heritage Hats proudly serves Phoenix, Scottsdale, Cave Creek, and customers nationwide with quality custom-made and brand-name hats.
+          Our collection features westerns, fedoras, Panamas, Australians, Kangols, pork pies, derbies, top hats, and classic flat caps.
+          Each style page highlights history, fashion, and function, paired with photos to inspire your choice.
+          With hat bands and accessories to customize your look, we make it easy to find a hat that reflects your individuality and sense of style.
+        </p>
+      </section>
+
+      <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+  <h2>Shop</h2>
+  <div class="shop-grid">
+    <div class="hat-category">
+      <img src="./Image/Western Felt Hats.jpeg" alt="Western Felt Hat"class="responsive-item">
+      <h3>Western Felt Hats</h3>
+      <p>Starting at $150</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="hat-category">
+      <img src="./Image/Fedora straw.png" alt="Fedora Straw Hat"class="responsive-item">
+      <h3>Fedora Straw Hats</h3>
+      <p>Starting at $100</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="hat-category">
+      <img src="./Image/Panama Hats.jpeg"style="width:80%; max-width:400px; height:20;" alt="Panama Hat"class="responsive-item">
+      <h3>Panama Hats</h3>
+      <p>Starting at $120</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="hat-category">
+      <img src="./Image/Caps.jpeg" style="width:100%; max-width:400px; height:auto;"alt="Caps"class="responsive-item">
+      <h3>Caps</h3>
+      <p>Starting at $50</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="hat-category">
+      <img src="./Image/fedora felt hat.jpg" alt="Fedora Felt Hat"class="responsive-item">
+      <h3>Fedora Felt Hats</h3>
+      <p>Starting at $150</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="hat-category">
+      <img src="./Image/Western Straw Hats.jpeg" style="width:100%; max-width:400px; height:50;" alt="Western Straw Hat"class="responsive-item">
+      <h3>Western Straw Hats</h3>
+      <p>Starting at $100</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Resources Section -->
+ <section id="resources" class="resources">
+  <h2>Resources</h2>
+  <div class="resources-grid">
+    
+    <!-- Services Column -->
+    <div class="resource-card">
+      <img src="./Image/Services.png" alt="Person wearing a fedora outdoors">
+      <div class="resource-content">
+        <h3>Services</h3>
+        <p>
+          Discover custom and brand-name hats at Heritage Hats. From westerns to fedoras, Panamas, and more, we make it easy to find a style that's uniquely yours.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <!-- Tips Column -->
+    <div class="resource-card">
+      <img src="./Image/Tips.jpeg" alt="Straw hat next to eyeglasses on a beach">
+      <div class="resource-content">
+        <h3>Tips</h3>
+        <p>
+          Discover expert hat care and style tips to keep your hats looking sharp and lasting longer.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- Contact Section -->
+       
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; padding: 30px; align-items: start;">
+    
+    <!-- Column 1: Location Info -->
+    <div>
+      <h3>Visit Us</h3>
+      <p>We’re here to help with sizing, style questions, or custom orders. Reach us by phone, email, or vist us in store! No matter what you will get a friendly reply. 
+        Our team can guide you through hat care, accessories, and finding the perfect fit.</p>
+      <p>123 Hat Street<br>Cave Creek, AZ 85331</p>
+      <p>Mon–Sat: 10am–6pm<br>Sun: Closed</p>
+    </div>
+
+    <!-- Column 2: Contact Details -->
+    <div>
+      <h3>Get in Touch</h3>
+  
+      <p>Visiting Arizona? Stop by our Cave Creek shop for fittings, special orders, or to browse our collection in person.</p>
+      <p>We also ship nationwide and handle returns, exchanges, and repairs with ease—just include your order number when you reach out.</p>
+    </div>
+
+          <!-- Column 3: Small Image -->
+    <div>
+      <img src="./Image/map.png" style="width:100%; max-width:400px; height:auto;" alt="map"class="responsive-item"/>
+    </div>
+  </div>
+
+      </section>
+      
+
+      <!-- Reviews -->
+      <section id="reviews" class="reviews">
+  <h2>Reviews</h2>
+  <div class="review-grid">
+    <div class="review-card">
+      <p>"Best hat shop in Arizona—great quality and service!"</p>
+      <span>- Maria R</span>
+    </div>
+
+    <div class="review-card">
+      <p>"They restored my old felt hat perfectly. Looks brand new!"</p>
+      <span>- James T</span>
+    </div>
+
+    <div class="review-card">
+      <p>"Awesome selection of Western hats and super friendly staff."</p>
+      <span>- Danielle S</span>
+    </div>
+
+     <div class="review-card">
+      <p>"My favorite place to get hats and they are perfect gifts."</p>
+      <span>- Robert M</span>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Sign-Up Section -->
+    <div class="sticky-popup" id="signupPopup">
+  <div class="popup-inner">
+    <button class="popup-close" onclick="document.getElementById('signupPopup').style.display='none'">×</button>
+    <div class="popup-text">
+      <h3>Sign Up Today!</h3>
+      <p>Get <strong>$25 Off</strong> your next purchase</p>
+    </div>
+    <form class="popup-form">
+      <input type="email" placeholder="you@example.com" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+  <div class="footer-content">
+  <img src="./Image/new versions of white-01.png" style="width:100%; max-width:400px; height:auto;" alt="map"class="responsive-item"/>
+
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Phone: (602) 867-3323</p>
+      <p>Email: Heritagehats@gmail.com</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-column">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- Shop Categories -->
+    <div class="footer-column">
+      <h3>Shop Categories</h3>
+      <ul>
+        <li><a href="#western-felt">Western Felt Hats</a></li>
+        <li><a href="#fedora-felt">Fedora Felt Hats</a></li>
+        <li><a href="#panama">Panama Hats</a></li>
+        <li><a href="#fedora-straw">Fedora Straw Hats</a></li>
+        <li><a href="#caps">Caps</a></li>
+        <li><a href="#western-straw">Western Straw Hats</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#reviews">Review</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Heritage Hats. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+   
+  </body>
+</html>
