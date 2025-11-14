@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* image 29 */
+img.border {
+  border: 10px solid #242F35;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Geist", "arial", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add any Fonts */
+
+h2, h3, h4, h5, h6 {
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+
+.display-font {
+    font-family: "concave-tuscan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.display-font2 {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Containers */
+.two-columns-layout {
+  display: flex;
+  gap: 0px;
+}
+
+.content-wrap {
+  padding: 5px 20px 10px 20px;
+}
+
+/* Headings */
+header nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #242F35;
+  padding: 20px;
+  z-index: 999;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav ul a {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: flex;
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+
+header nav img {
+  vertical-align: middle;
+}
+
+/* hero section */
+.hero {
+  background-image: url(../images/herohatscactus.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  padding: 300px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "concave-tuscan", sans-serif;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* store link section */
+.storelink {
+  display: flex;
+}
+
+.storelink .content-wrap {
+  max-width:50%;
+
+}
+
+.storelink-image {
+  background-image: url(../images/clearhatwallbackground.png);
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  padding: 0;
+}
+.storelink-content {
+  background-color: #EDE0D1;
+  border: 5px solid #4D3834;
+  text-align: center;
+  padding: 4rem 1rem;
+  width: calc(100% - 42px);
+}
+
+.storelink-content h2 {
+  font-size: 1.8rem;
+  color: #4D3834;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "concave-tuscan", sans-serif;
+}
+
+.storelink-content p {
+  background-color: #fff;
+  border: 2px solid #4D3834;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+
+/* about + contact section */
+.about {
+  flex-wrap: wrap;
+  display: flex;
+  background-image: url(../images/Clearbluehat.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 0;
+}
+
+.about .content-wrap {
+  max-width: 50%;
+}
+
+.about-content {
+  color: #fff;
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact {
+  background-color: #EDE0D1;
+  color: #9D726B;
+  text-align: center;
+  flex: 1;
+  padding: 3rem 2rem;
+}
+
+.contact h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #9D726B;
+  font-family: concave-tuscan, sans-serif;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #9D726B;
+  padding: 10px;
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+.contact-form{
+    background-color: #242F35;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "JetBrains Mono", "arial", sans-serif;
+  }
+
+.about-content h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* our hats section */
+.hats {
+  text-align: center;
+  background-color: white;
+  padding: 4rem 2rem;
+}
+
+.hats h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #1D1F21;
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+
+.hats p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+  font-family: "JetBrains Mono", "arial", sans-serif;
+}
+
+/* hat care tips */
+.tips {
+  background-color: #242F35;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.tips h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.tips p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #e4e4e4;
+}
+
+.tips div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.tips div div {
+  width: 280px;
+  text-align: left;
+}
+
+/* contact form */
+.contactbottom {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #EDE0D1;
+  color: #9D726B;
+  flex: 1;
+  background-image: url(../images/image.png);
+  background-size: 700px;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: white;            
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;  
+}
+
+.contactbottom h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  padding: 200px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: #fff;
+    color: black;
+    padding: 3rem 2rem;
+    font-family: "JetBrains Mono", "arial", sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 30px;
+  }
+ 
+  .footer-left img {
+    width: 200px;
+    height: auto;
+  }
+
+/* responsive layout */
+@media screen and (max-width: 768px) {
+  .two-columns-layout, .about {
+    flex-direction: column;
+  }
+
+  .about .content-wrap,.storelink .content-wrap {
+    max-width:100%;
+  }
+
+  .storelink-content {
+    padding: 2rem 1rem;
+  }
+
+  .about-content,
+  .contact {
+    max-width: 100%;
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 100%;
+    max-width:100%;
+  }
+}

@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+/*nav start*/
+nav
+{
+    font-family: "roboto";
+    font-size: 2.25rem;
+}
+
+header nav /*keeps the nav bar at the top of the screen*/
+{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #E6D5BC;
+    top: 0px;
+    left: 0px;
+    right:0px;
+}
+
+header nav ul /*for the unordered list*/
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul a /*to change the way the linked buttons work*/
+{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+/*nav end*/
+
+/*About Us Section*/
+.about /*about set up (can use for the FaQ)*/
+{
+    background-color: #261701;
+}
+
+.about .aboutInner
+{
+    display: flex;
+}
+
+.about .accordian-about-us
+{
+    width: 100%;
+}
+
+.about .accordian-about-us details
+{
+    background-color: #E6D5BC;
+}
+/*About Us End*/
+
+/*FaQ Start*/
+.faq .faqInside /*faq style start*/
+{
+    display: flex;
+}
+.faq .faq-accordian
+{
+    width: 50%;
+}
+.faq .faq-accordian details
+{
+    background-color: #E6D5BC;
+}
+/*End*/
+
+/*Contact Us*/
+.contact
+{
+    background-color: #022240;
+}
+.contact .contactInfo
+{
+    max-width: 50%;
+    height: auto;
+    background-color: #D9D9D9;
+}
+body
+{
+    font-family: "Inter";
+    font-size: 1.68rem;
+    background-color: #261701;
+}
+html
+{
+    font-size: 16px;
+}
+
+h1
+{
+    font-family: "Italiana";
+    color: #FFFFFF;
+    font-size: 6rem;
+}
+
+h2
+{
+    font-family: "Rye", "Zebrawood";
+    color: #3A6FA2;
+    font-size: 5.31rem;
+    -webkit-text-stroke: 0.5px black; /* Sets a 2px black stroke */
+}
+.h2BrandTagline
+{
+    font-size: 2.5rem;
+}
+
+.h2whiteBackgroundColor
+{
+    color:#364F96;
+    -webkit-text-stroke: 0.5px #0c1d50;
+
+}
+
+.h2altColor /*for the Contact Us*/
+{
+    color: #E6D5BC;
+    -webkit-text-stroke: 0.5px #593706; /* Sets a 2px black stroke */
+}
+h3
+{
+    font-family: "Italiana", "Poblet Solid";
+}
+
+footer
+{
+    color:#F5F5F5;
+}
+
+/* Text */
+
+/* Lists */
+
+/* Links */
+
+/* Images */
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Backgrounds */
+.storeWhiteBackgroundColor
+{
+    background-color:#F5F5F5
+}
+.faqBlueBackgroundColor
+{
+    background-color: #306291;
+}
+/* Tables */
+
+/* Containers */
+
+@media screen and (max-width:900px) 
+{
+    .aboutInner{
+        flex-direction: column;
+    }
+}

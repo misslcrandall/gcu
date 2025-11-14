@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "chunkfive";
+    src: url("../fonts/chunk-five-print.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    color: #000;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family:"raleway", "EB Gamond", sans-serif;
+}
+header nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right:0px
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:"chunkfive";
+}
+
+html{
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 650px) {
+    .topbar-nav{
+        display: none;
+    }
+    .two-col-layout{
+        flex-direction: column;
+    }
+}
+
+/* Text */
+
+/* Lists */
+
+/* Links */
+
+/* Images */
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+/* Backgrounds */
+
+/* Tables */
+
+/* Containers */

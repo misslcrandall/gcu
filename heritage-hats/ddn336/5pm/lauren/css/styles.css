@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Add any Fonts */
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Avenir", "Arial",
+    sans-serif;
+    margin: 0 auto;
+}
+
+header nav{
+    padding-top: 10px;
+    padding-right: 20px;
+    font-family: "Sutro Bold", "Georgia", 
+    serif;
+}
+
+/* Headings */
+header{
+    display: flex;
+    position:sticky;
+    padding-left: 36px;
+    padding-bottom: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(94, 53, 4);
+    z-index: 99;
+}
+
+header nav{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul a{
+    padding: 10px;
+    color: rgb(242, 218, 187);
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family: "Sutro Black Initials", "Georgia", 
+    serif;
+    font-kerning: auto;
+}
+h4{
+    font-family: "Avenir", "Arial",
+    sans-serif;
+}
+.eyebrow{
+    font-family: "Sutro", "Georgia",
+    serif;
+    font-size: 1.625rem;
+}
+
+.hero .hero-header{
+    position: absolute;
+    color: rgb(242, 218, 187);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+.contact-header{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Text */
+p{
+    font-size: 1.25rem;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.625rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+
+.textcolor-brown{
+    color: #5E3504;
+}
+.textcolor-light-brown{
+    color: #C18E52;
+}
+.textcolor-blue{
+    color: #00363B;
+}
+.textcolor-cream{
+    color: #F2DABB;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #F2DABB;
+}
+
+.footer-links{
+  padding-bottom: 36px;
+}
+
+.services-text{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Lists */
+.twocol-list{
+    max-width: 50%;
+    text-align: center;
+}
+.link-list{
+    display: flex;
+    width: 50%;
+    margin-top: 105px;
+}
+
+.icon-list{
+    display:flex;
+    align-items: center;
+    justify-content:right;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    color: #C18E52;
+}
+
+/* Links */
+
+/* Images */
+img{
+    margin: 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+img .about-img{
+    width: max-content;
+    height: auto;
+    padding: 155px;
+}
+
+.section-splitter{
+    display: flex;
+    color: rgb(242, 218, 187);
+    background-image: url(../images/cowgirl-sectionsplitter.png); 
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-logo{
+    height: max-content;
+    width: max-content;
+    padding-top: 10px;
+}
+
+.hero{
+    display: flex;
+    color: rgb(242, 218, 187);
+    background-image: url(../images/heritage-hero-image.jpeg); 
+    height: 653px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-img{
+    display: flex;
+    color: rgb(242, 218, 187);
+    background-image: url(../images/form-image.jpg); 
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-hat{
+    height: 100%;
+    width: auto;
+}
+
+    /* Backgrounds */
+.background-brown{
+    background-color: #5E3504;
+}
+.background-light-brown{
+    background-color: #C18E52;
+}
+.background-cream{
+    background-color: #F2DABB;
+}
+
+/* Tables */
+
+/* Containers */
+.content-wrap{
+    padding: 24px;
+}
+
+.two-column-layout{
+    display: flex;
+    gap: 76px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.two-col-footer{
+    display: flex;
+    gap: 76px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.column{
+    max-width: 50%;
+}
+
+.about-us-section{
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+
+.section-grid{
+    margin: 70px;
+}
+
+.button-text{
+    padding: 13px;
+    margin: 26px 31px;
+    background-color: #00565F;
+    border-radius: 5px;
+}
+
+.box-text{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #C18E52;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.box-text-event{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #C18E52;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.accordian-box-text{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #C18E52;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.inner-box-text{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #F2DABB;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #C18E52;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #F2DABB;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #5E3504;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #F2DABB;
+  color: #C18E52;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #5E3504;
+  color: #F2DABB;
+}
+
+
+@media screen {
+    .topnav{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1057px) {
+    .two-column-layout{
+        flex-direction: column;
+    }
+    .about-us-section{
+        align-items: center;
+    }
+    h2.textcolor-brown{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    header{
+        display: none;
+    }
+    .link-list{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .section-grid{
+        margin: 0;
+    }
+    .body{
+    white-space: nowrap;
+    overflow: hidden
+   }
+   h2{
+    word-break:break-all;
+   }
+    h1{
+    word-break: break-all;
+   }
+}
+
+@media screen and (max-width:480) {
+   .body{
+    white-space: nowrap;
+    overflow: hidden
+   }
+   h2{
+    word-break:break-all;
+   }
+    h1{
+    word-break: break-all;
+   }
+   .section-grid{
+        margin: 0;
+    }
+}

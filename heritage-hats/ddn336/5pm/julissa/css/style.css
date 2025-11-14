@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    color:black;
+}
+
+html{
+    font-size:16px;
+}
+
+p{
+    font-size:1.2081rem;
+}
+body{
+    font-family: "Kantumruy Pro", "Arial", 
+    sans-serif; 
+}
+
+h1{
+    font-size:2.5rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+h3{
+    font-size:1.6669rem;
+}
+
+p{font-size:1.125rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Love Ya Like a Sister", "arial", 
+    sans-serif; 
+}
+
+/* Text */
+    body{
+        background-color: #405A6B;
+        margin: 0;
+    }
+
+header{
+    padding-top: 32px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:#EFEDE8;
+    border: solid;
+    border-color: black;
+    z-index: 9999;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 8px;
+    padding: 18px;
+}
+
+header nav ul a{
+    padding: 10px;
+    color: #405A6B;
+    text-decoration: none;
+}
+
+.mobile-nav{
+    display:none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color:#405A6B
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color:#EFEDE8
+}
+
+/*about section*/
+
+.about .about-image{
+    background-image: url(../images/heritage\ hats\ logo\ new\ new.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%; 
+    height: 400px;
+}
+/* Lists */
+
+/* Links */
+
+/* Images */
+img{
+    max-width: 100%;
+    height: auto;
+    border-color:#405A6B;
+}
+
+.hat-image {
+    aspect-ratio: 1 / 1;
+    border: solid;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hat-item img {
+    margin: 0 auto;
+    width: 287.93;
+    height: 201.55;
+}
+/* Backgrounds */
+.background-white{
+    display:flex;
+    background-color: #EFEDE8;
+    margin:80px 0;
+    border-color:#405A6B;
+    border:solid;
+
+}
+
+/* Tables */
+
+/* Containers */
+.center-layout{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+.center-items{
+    justify-content: center;
+}
+
+.two-col-layout{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+footer{
+    justify-content: space-between;
+    display:flex;
+}
+
+.hat-slider{
+    display:flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-content: center;
+    padding: 18px;
+    margin: auto;
+    stroke-width: 15%;
+    border-color:#405A6B;
+}
+
+@media screen and (max-width:650px) {
+.center-layout{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: calc(100% - 40px);
+}
+}
+
+.mobile{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: calc(100% - 40px);
+}
+@media screen and (max-width:650px) {
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display:block;
+    }
+    .two-col-layout{
+        flex-direction: column;
+    }
+}
