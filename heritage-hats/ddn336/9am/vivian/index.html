@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Hats</title>
+<!-- Link the CSS stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="topbar-nav">
+            <img src="images/nav-logo.png" class="nav-logo" alt="Logo" width="639px" height="66px" >
+            <nav class="desktop-nav">
+                <ul class="topbar-nav">
+                    <li><a href="#topbar-nav">Home</a></li><span> | </span>
+                    <li><a href="#hats">Hats</a></li><span> | </span>
+                    <li><a href="#services">Services</a></li><span> | </span>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+                <button class="btn-primary">Shop</button>
+            </nav> 
+                <div class="mobile-nav">
+                    <a href="#home" class="active">Heritage Hats</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="#hero">Home</a>
+                        <a href="#hats">Hats</a> 
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                   
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                
+                </div>
+        </div>   
+       
+    </header>    
+<!-- Start Main -->
+    <main> 
+        <section id="hero-page">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Crafted From Tradition.</h2>
+            </div>
+        </div> 
+        </section>
+        <section id="about">
+            <div class="about-section"> 
+                <div class="about-copy">
+                    <h2>About Us</h2>
+                    <p>At Heritage Hats, we are passionate about preserving tradition through the art of craftsmanship. Rooted in a deep appreciation for handmade, cultural, and timeless designs. Our mission is to bring hats to modern lifestyles. Whether it is through curated pieces or our thoughtfully crafted collections, we aim to celebrate your stories with hats made with techniques passed down through generations. With every item, Heritage Hats stands for authenticity, quality, and Functionality.</p>
+                    <details>
+                        <summary>Learn More</summary>
+                        <p>We offer a wide selection of hats, including westerns, fedoras, Panamas, Australian styles, and a variety of caps. Our collection also features classic options like Kangol, pork pie, derby, and top hats, along with an extensive range of flat caps. Each hat style has its own dedicated page, complete with background information on its history, fashion relevance, and practical use. You'll also find photo galleries and examples of what we currently have in stock. We believe a hat is a powerful expression of your personal style, and we hope our website serves as a helpful guide in your search for the perfect fit. To further personalize your look, we also offer a wide assortment of hat bands and other accessories.</p>
+                    </details> 
+                    <div class="about-imgs">
+                        <img src="images/fc_girlhat.jpg" alt="'Girl Hat">
+                        <img src="images/fc_carhat.jpg" alt="Car Hat">
+                        <img src="images/fc_horseguy.jpg" alt="Horse Guy">
+                    </div> 
+                </div>   
+            </div>
+        </section>
+
+        <section id="arrivals">
+            <div class="new-arrivals"> 
+                <h2>New Arrivals</h2>
+            </div>    
+            <div class="new-arrivals-img">
+                <img src="images/bw_guy.jpg"alt="BW Guy">
+                <img src="images/bw_girlfeathers.jpg" alt="Girl Feathers">
+                <img src="images/bw_kidhat.jpg" alt="Kid Hat">         
+                
+            </div>
+            <button class="btn-group" onclick="window.location.href='https://youtu.be/nVsyCMpzMHI?si=rYT420TKhlngNVOW'">Watch Our Artisans at Work</button>
+        </section>
+      
+        <section id="hats"> 
+            <div class="hats-list">
+                <h2>Our Hats</h2>
+                <div class="product-listing">
+                    <div class="product_card"> 
+                        <img src="images/hat1.png" alt="Hat One">
+                        <h3>Australian Hats</h3>
+                        <p>Rugged, wide-brimmed hats designed for sun protection and durability in the outdoors.</p>
+                    </div>
+                    <div class="product_card"> 
+                        <img src="images/hat2.png" alt="Hat Two">
+                        <h3>Fedora Hats</h3>
+                        <p>Classic, stylish hats known for their pinched front, creased crown, and medium-to-wide brim.</p>
+                    </div>
+                    <div class="product_card">
+                        <img src="images/hat3.png" alt="Hat Three">
+                        <h3>Felt Hats</h3>
+                        <p>Compressed and matted animal fibers, typically wool or fur, creating a durable yet soft material.</p>
+                    </div>
+                    <div class="product_card">
+                        <img src="images/hat4.png" alt="Hat Four">
+                        <h3>Straw Hats</h3>
+                        <p>Lightweight, breathable hats woven from natural or synthetic straw materials.</p>
+                    </div>
+                </div>    
+            </div>
+        </section>      
+
+        <section id="services">
+            <div class="service-listing">
+                <h2>Our Services</h2>
+                <p>We offer a full range of services, including custom fittings, cleaning, reshaping, and restorations, all carried out by skilled artisans who treat every hat like a legacy in the making.</p>
+            </div>
+            <div class="btn-group">
+                <button class="btn service">Cleaning & Blocking Service</button>
+                <button class="btn service">Re-shaping Crown</button>
+                <button class="btn service">Re-shaping Brim</button>
+                <button class="btn service">Sweatband Replacement</button>
+            </div>
+            
+        </section>
+
+        <section id="newsletter">
+            <div class="newsletter-signup">
+                <form>
+                    <div class="container">
+                        <h2>Subscribe to our newsletter for the latest hat styles, exclusive offers, and tips on choosing the perfect hat with a 15% discount. Be the first to know what's new!</h2>
+                    </div>
+
+                    <div class="container" style="background-color:white">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="text" placeholder="Email address" name="mail" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                        </label>
+                    </div>
+
+                    <div class="container">
+                    <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+          <div class="two-col-layout">
+            <section class="column">
+              <h2>Contact Us</h2>
+              <p>13602 N Cave Creek Road Phoenix, Arizona 85022.</p>
+              <p>602.867.3323</p>
+              <p>Operating hours are from 10am-5pm. Sundays Closed.</p>
+            </section>
+            <section class="column">
+              <h2>Social Medias</h2>
+                <div class="socials">
+                    <a href="https://www.instagram.com/explore/locations/165960664/heritage-hats/"><img src="images/icon-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/HeritageHatshop/"><img src="images/icon-facebook.png"alt="Facebook"></a>
+                </div>
+            </section>  
+          </div>
+        </section>        
+      <!-- End Main -->
+    </main>
+  <!-- Add Footer -->
+    <footer>
+        Copyright October 3rd, 2025. DDN336. Vivian Rios
+    </footer>
+</body>
+</html>
