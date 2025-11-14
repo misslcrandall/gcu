@@ -1,0 +1,493 @@
+@charset "utf-8";
+
+
+body{font-family: "inter"}
+
+body{
+  background-color: white; 
+  margin: 0px 0px;
+}
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+/*==================================
+NAVIGATION STYLES
+==================================*/
+
+nav{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+nav ul{
+  display: flex; 
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eyebrow {
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+padding: 54px 12px ;
+gap: 54px;
+}
+
+.eyebrow h2{
+font-family: inter;
+font-weight: 300;
+letter-spacing: 16px;
+font-size: 22px;
+justify-content: center;
+gap: 14px;
+margin-right: -16px;
+text-transform: uppercase;
+}
+
+nav div {
+  padding: 12px 54px;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 54px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-shop{
+  gap: 8px;
+}
+
+nav ul a{
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  gap: 4px;
+}
+
+/*==========================
+HEADER EDITS
+============================*/
+
+html{
+    font-size: 16px;
+}
+
+.hero{
+  line-height: 78px;
+  padding: 120px;
+  height: 90vh;
+  background-size: cover;
+  background-image: url("../IMG/Hero/Heritage Hats_Hero.jpg");
+  background-position: center;
+  margin: 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1{
+  max-width: 837px;
+}
+
+h1{
+  font-family: "Merriweather", serif;
+  font-size: 7rem;
+  color: white; 
+  padding-bottom: 18px;
+  margin: 0px 0px;
+  line-height: 95%;
+  }
+/*=========================
+CONTENT
+==========================*/
+
+.hero-content{
+  max-width: 70%;
+}
+
+.hero-content h2{
+  line-height: 27px;
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  margin: 0 0;
+}
+
+.hero-content button{
+  font-weight: 400;
+  font-size: 22px;
+  background-color: rgba(59, 59, 99, .44);
+  color: white;
+  border: none;
+  padding: 4px 140px;
+  padding-right: 4px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 4px ;
+}
+
+
+
+h2 .hero{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: Bold;
+  font-size: 4.768rem
+}
+
+h3 {
+    font-family: "merriweather", serif;
+    font-size: 1.5rem;
+    margin-block: -10px;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/*===========================
+SHOP CARD EDITS
+===========================*/
+
+.shop-card-wrap{
+  display: flex;
+  flex-direction: row;
+  margin: 60px -12px;
+  margin-bottom: 140px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #EDEDEA;
+  gap: 12px;
+  margin: 0px 10px;
+  align-items: center;
+  max-width: 300px;
+  width: 300px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1); 
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.shop-card img{
+padding: 24px 0px;
+}
+
+.shop-card-padding{
+  background-color: white;
+  padding: 20px;
+}
+
+.shop-card-button{
+  display: flex;
+  flex-direction: row;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.shop-card-button button{ /*This is all jacked up and I need to make a better looking button. I was thinking about putting it beneath each card*/
+  font-size: 18px;
+  font-weight: 800;
+  padding: 0px 20px;
+  color: white;
+  background-color: #3B3B63;
+  border-bottom-right-radius: 8px;
+  border-style: none;
+}
+
+/*============================
+ABOUT SECTION
+============================*/
+
+.about-padding{
+  display: flex;
+  align-items: center;
+}
+
+.about-content{
+  padding: 0 60px;
+}
+
+.about-content p{
+  line-height: 23px;
+  max-width: 600px;
+  min-width: 100px;
+}
+
+/*============================
+YOUTUBE IMG
+============================*/
+
+.youtube-img{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 60px 0px;
+  margin: 60px 0px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto; 
+}
+
+.about-video a img{
+  border-radius: 8px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*============================
+SERVICES
+============================*/
+
+.services-card-wrap{ /*I can't seem to get the height even between all three svgs :/ */
+  display: flex;
+  flex-direction: row;
+  margin: 60px -12px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 12px;
+  margin: 0px 10px;
+  align-items: center;
+  width: 300px;
+  height: 355p;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1); 
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.services-card svg{
+  display: flex;
+  padding: 24px 24px;
+  margin-top: 40px;
+  height: auto;
+  align-content: center;
+  align-items: center;
+}
+
+
+.services-card-padding{
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  justify-content: left;
+}
+
+.blurb{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 18px;
+line-height: 40px;
+font-family: inter;
+font-style: italic;
+font-weight: 300;
+color: #818181;
+max-width: 600px;
+}
+
+.services{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+/*==============================
+CONTACT FORM
+===============================*/
+
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+
+.contact-form-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  margin-top: -48px;
+}
+
+.contact-header h2{
+font-size: 86px;
+padding: 12px 0;
+margin: 0;
+}
+
+.contact-header{
+margin: 40px 0;
+margin-bottom: 40px;
+}
+
+.contact-header h3{
+font-size: 22px;
+font-family: inter;
+font-weight: 400;
+max-width: 400px;
+margin-bottom: 40px;
+}
+
+.contact-form{
+border: 2px solid #cccccc;
+color: #818181;
+margin: 12px 0px;
+padding: 0px 12px;
+border-radius: 8px;
+}
+
+.message{
+height: 200px;
+}
+
+.contact-button{
+  font-weight: 400;
+  font-size: 22px;
+  background-color: #3B3B63;
+  color: white;
+  border: none;
+  padding: 8px 120px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  gap: 4px ;
+}
+
+.map-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-map{
+padding-bottom: 20px;
+width: 350px;
+}
+
+.contact-location-hours-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/*==============================
+FOOTER
+===============================*/
+
+footer{
+  background-color: #F9F9F9;
+  color: #818181;
+  padding: 54px 60px;
+  display: flex;
+  gap: 60px;
+  align-items: last baseline;
+}
+
+footer svg{
+  margin-bottom: 12px;
+}
+
+
+/* Headings */
+h1, h2{
+  font-family: "merriweather", serif;
+}
+
+/* Text */
+
+/* Lists */
+
+/* Links */
+
+/* Images */
+
+/* Backgrounds */
+
+/* Tables */
+
+/* Containers */
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*==================================
+MEDIA QUERIES
+==================================*/
+
+@media screen and (max-width: 1280px) {
+  main {
+    padding: 0 80px;
+  }
+  .about-padding{
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  .about-content{
+    flex-direction: column;
+  }
+
+  .contact{
+  flex-direction: column;
+  }
+
+  .contact-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services-card-wrap{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .services-card{
+    width: 100%;
+  }
+}
+
+
+

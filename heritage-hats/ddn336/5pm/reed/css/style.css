@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Add any Fonts */
+@font-face {
+    font-family: 'Diamond Creek';
+    src: url('fonts/DiamondCreek.woff2') format('woff2'),
+        url('fonts/DiamondCreek.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+  scroll-padding-top: 100px;
+  overflow-x: hidden;
+}
+
+
+body {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(240, 240, 240, 0), rgba(180, 180, 180, 0.3)), rgba(255, 255, 255, 0.85);
+    padding: 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+header nav img {
+    display: flex;
+    margin: 0;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Enriqueta", serif;
+}
+
+h1, h2{
+    font-family: 'Diamond Creek';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3, p{
+    font-family: "Enriqueta", serif;
+}
+
+h1{
+    color:white;
+    font-size: 64px;
+}
+
+h2{
+    font-size: 64px;
+    text-align: center;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    font-size: 24px;
+}
+
+li{
+    font-size: 20px;
+}
+
+
+/* START */
+
+.start {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 120px;
+}
+#start {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    position: relative;
+    overflow: hidden;
+}
+.top-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#gradient1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 164px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    z-index: 2;
+}
+.top-container img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.start-text {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+    width: 90%;
+}
+
+/* About Us */
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0;
+    margin-left: calc(50% - 50vw);
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+.about-text h2 {
+    background-color: rgba(233, 129, 107, 1);
+    color: white;
+    margin: 0;
+    padding: 40px;
+}
+.about-text p {
+    background-color: rgba(233, 129, 107, 0.5);
+    margin: 0;
+    padding: 50px;
+}
+.about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hat Types */
+.hat-types h2 {
+    background-color: rgba(37, 105, 112, 1);
+    margin-top: 0;
+}
+.hat-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hat-segment img {
+    max-width: 80%;
+    height: auto;
+}
+/* Care + Restoration */
+.care-text,
+.restore-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+    /* Care Tips */
+    .hat-care {
+        display: flex;
+    }
+    .hat-care h2 {
+        background-color: rgba(37, 105, 112, 0.75);
+    }
+    .care-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Restoration Services */
+    .restore {
+        display: flex;
+    }
+    .restore h2 {
+        background-color: rgba(37, 105, 112, 0.50);
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+    .restore-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Contact */
+.contact {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding: 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(233, 129, 107, 0.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact h2 {
+    background-color: rgba(233, 129, 107, 1);
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 0;
+    }
+.contact-form {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    gap: 25px;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 0 0 35%;
+}
+.contact-right {
+    flex: 1 1 65%;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-section label {
+    font-family: "Enriqueta", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Contact Form Button Stuff */
+.contact-form input,
+.contact-form textarea {
+    font-family: "Enriqueta", serif;
+    font-size: 18px;
+    padding: 12px 14px;
+    border: 2px solid white;
+    border-radius: 8px;
+    resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgba(233, 129, 107, 1);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(233, 129, 107, 1);
+}
+.contact-form button {
+    font-family: "Enriqueta", serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(233, 129, 107, 1);
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #F0D4B5;
+    width: 94vw;
+    margin-left: calc(50% - 50vw);
+    padding: 50px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Special Things */
+
+.header-span h2 {
+    color: white;
+    padding: 25px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.two-column {
+    max-width: 50%;
+}
+
+/* Mobile Stuff */
+@media (max-width: 1024px) {
+    body {
+        max-width: 100%;
+        padding: 0;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    header nav ul a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 18px;
+    }
+    li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* About Us */
+    .about-us {
+        text-align: center;
+    }
+    .about-text,
+    .about-img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .about-text h2,
+    .about-text p {
+        padding: 30px 20px;
+    }
+
+    /* Contact */
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+    .contact-form button {
+        width: 50%;
+    }
+
+    /* Footer */
+    footer {
+        width: 100vw;
+        margin: 0;
+        padding: 30px 0;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p, li {
+        font-size: 16px;
+    }
+
+    header nav img {
+        width: 200px;
+        height: auto;
+    }
+}

@@ -1,0 +1,623 @@
+
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --background: #e7dcd1;
+  --primary: #4e1d0e;
+  --accent: #b85b36;
+  --button-blue: #5474A1;
+  --card-bg: #f4ebe4;
+  --text-dark: #2a2a2a;
+  --muted: #6b6b6b;
+  --white: #ffffff;
+  --radius: 25px;
+  --max-width: 1100px;
+}
+
+/* ========== BASE ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.site {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+}
+
+header nav {
+  display: flex;
+  gap: 3rem;
+}
+
+header nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  transition: opacity 0.2s;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* ========== HERO ========== */
+.hero{
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 1rem;
+  position: relative;
+  background: url('..//images/HeroImage.jpeg') center/cover no-repeat;
+}
+
+.hero:hover{
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 1rem;
+  position: relative;
+  background: url('..//images/About3.jpg') center/cover no-repeat;
+  transition: background 0.5s;
+}
+
+.hero::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(41, 20, 8, 0.55);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 1.2;
+  max-width: 28ch;
+  margin: 0 auto 1.5rem;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero .btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.8rem 4rem;
+  border-radius: 4rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.hero .btn-primary:hover {
+  background: var(--background);
+  color: var(--primary)
+}
+
+/* ===== HAT SCROLL BAR ===== */
+.hat-scroll {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--primary);
+  white-space: nowrap;
+  padding: 0.7rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.scroll-content {
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+}
+
+.scroll-content span {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--background);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0 2rem;
+  text-transform: uppercase;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ========== SECTION TITLES ========== */
+section h3 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3rem;
+  color: var(--accent);
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  text-transform: uppercase;
+}
+
+/* ========== UNDER THE BRIMS ========== */
+.under-the-brims {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.under-the-brims img {
+  flex: 1 1 350px;
+}
+
+.under-the-brims .text {
+  flex: 1 1 350px;
+}
+
+.under-the-brims p {
+  margin-bottom: 1rem;
+}
+
+.under-the-brims .btn-outline {
+  display: inline-block;
+  background: var(--button-blue);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.under-the-brims .btn-outline:hover {
+  display: inline-block;
+  background: var(--background);
+  color: var(--button-blue);
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: 2px solid var(--button-blue)
+}
+
+
+/* ========== MOSEY 'ROUND ========== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  
+}
+
+.card h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.card .shop {
+  background: var(--button-blue);
+  color: var(--card-bg);
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  letter-spacing: 20%;
+  transition: background 0.3s;
+}
+
+.card .shop:hover {
+  background: var(--card-bg);
+  color: var(--button-blue);
+  border: 2px solid var(--button-blue);
+}
+
+/* ========== FAQ SECTION ========== */
+.faq {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq h3 {
+  margin-bottom: 1rem;
+}
+
+.qa {
+  background: var(--white);
+  border-radius: 2rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.qa button {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qa span {
+  font-size: 1.3rem;
+}
+
+.answer {
+  display: none;
+  padding: 0 1.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.faq a {
+  background: var(--button-blue);
+  color: var(--card-bg);
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  letter-spacing: 20%;
+  transition: background 0.3s;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.faq a:hover {
+  background: var(--card-bg);
+  color: var(--button-blue);
+  border: 2px solid var(--button-blue);
+}
+
+/* ========== SERVICES SECTION ========== */
+
+.service {
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  flex: 0 0 280px;
+}
+
+.service img {
+  border-radius: var(--radius);
+  margin-bottom: 0.8rem;
+}
+
+.service h5 {
+  font-family: "Inter", sans-serif;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+  font-size: medium;
+}
+
+.service p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.service a {
+  background: var(--button-blue);
+  color: var(--card-bg);
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  letter-spacing: 20%;
+  transition: background 0.3s;
+  margin-bottom: 1.3rem;
+}
+
+.service a:hover {
+  background: var(--card-bg);
+  color: var(--button-blue);
+  border: 2px solid var(--button-blue);
+}
+
+.services-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 1.5rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 2rem;
+  width: 100vw;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--card-bg);
+}
+
+.services-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.services-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.services-scroll::-webkit-scrollbar-track {
+  background-color: var(--card-bg);
+}
+
+/* ===== Scroll Wrapper ===== */
+.services-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* ===== Arrows ===== */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--primary);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+.scroll-btn.right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+}
+
+/* ========== FOOTER ========== */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  color: var(--muted);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons a {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.footer-icons a:hover {
+  background: var(--accent);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* ===== Tablet (under 1024px) ===== */
+@media (max-width: 1024px) {
+  header nav {
+    gap: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .site {
+    padding: 1rem;
+  }
+
+  section h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ===== Large Mobile (under 768px) ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    padding: 5rem 1rem;
+    background-position: center center;
+  }
+
+  .hero h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .hero .btn-primary {
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .under-the-brims {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .under-the-brims img {
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faq {
+    width: 90%;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+}
+
+/* ===== Small Mobile (under 480px) ===== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 4rem 0.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  section h3 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+

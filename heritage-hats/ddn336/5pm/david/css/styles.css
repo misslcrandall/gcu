@@ -1,0 +1,201 @@
+body {
+  font-family: 'DM Serif Text', serif;
+  margin: 0;
+  background-color: #f8f5f0;
+  color: #3b2f2f;
+}
+
+/* nav */
+nav {
+  background-color: #d1b48c;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3b2f2f;
+  font-weight: bold;
+}
+
+/* hero */
+.hero {
+  background-image: url("../images/header/hhheader.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 1080px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* shop grid */
+.shop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px;
+}
+
+.card {
+  background-color: #fff;
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: none;
+}
+
+button {
+  background-color: #33669A;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* lookbook */
+.lookbook-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.lookbook-grid img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+section {
+  margin: 50px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #33669A;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+  nav li {
+    margin: 0 10px;
+  }
+
+  .card {
+    width: 220px;
+  }
+
+  .lookbook-grid img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav li {
+    display: block;
+    margin: 10px 0;
+    position:flex  
+    
+  }
+
+  .hero {
+    height: 150px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .shop-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lookbook-grid img {
+    width: 90%;
+    height: auto;
+  }
+
+  section {
+    margin: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  button {
+    padding: 6px 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}

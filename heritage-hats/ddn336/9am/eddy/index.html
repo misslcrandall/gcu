@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heritage Hats - Home</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Font Awesome for hamburger icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body { margin: 0; font-family: 'Courier New', Courier, monospace, sans-serif; }
+    header { position: sticky; top: 0; background: #00365d; border-bottom: 1px solid #ddd; padding: 10px; text-align: center; z-index:1000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 12px; }
+    nav a { text-decoration: none; color: #ffffff; }
+    main { max-width: 1000px; margin: 0 auto; padding: 16px; }
+    section { padding: 16px 0; }
+    h1, h2 { margin: 8px 0; text-align: center; }
+
+    .btn { display: inline-block; padding: 8px 12px; background: #8b5e34; color: #fff; text-decoration: none; border-radius: 6px; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    @media (max-width: 700px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+
+    .card { border: 1px solid #ddd; padding: 10px; border-radius: 6px; text-align: center; }
+
+    /* Swiper */
+    .swiper { width: 100%; height: 260px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    .swiper-slide { display: flex; align-items: center; justify-content: center; font-size: 20px; color: #fff; }
+    .s1 { background: #5C432B; }
+    .s2 { background: #066bb3; }
+    .s3 { background: #0f8cc1; }
+
+    footer { background: #00365d; color: #fff; padding: 16px; margin-top: 20px; text-align: center; }
+    footer a { color: #fff; text-decoration: none; }
+
+    /* ===== Mobile topnav (hamburger) ===== */
+    .topnav { display: none; background-color: #00365d; position: relative; text-align:left; }
+    .topnav .brand { color: #fff; padding: 14px 16px; text-decoration: none; display: block; font-weight: 700; }
+    .topnav #myLinks { display: none; }
+    .topnav a { color: #fff; padding: 12px 16px; text-decoration: none; font-size: 16px; display: block; }
+    .topnav a:hover { background: rgba(255,255,255,0.1); }
+    .topnav a.icon { position: absolute; right: 0; top: 0; padding: 14px 16px; }
+
+    /* Show mobile nav / hide desktop nav on small screens */
+    @media (max-width: 700px) {
+      .topnav { display: block; }
+      .desktop-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Mobile Top Navigation -->
+  <div class="topnav">
+    <a href="#" class="brand">Heritage Hats</a>
+    <div id="myLinks">
+      <a href="#arrivals">New Arrivals</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" aria-label="Open menu" onclick="mobileMenuToggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Desktop header/nav -->
+  <img src="images/NEWturta.jpg" alt="Heritage Hats Logo" width="200" height="200">
+  <h1>Heritage Hats</h1>
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#arrivals">New Arrivals</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="swiper myHero">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide s1">
+        <img src="images/1frontcoverhat.jpg" alt="slideshow hat 1" width="100%" height="260">
+      </div>
+      <div class="swiper-slide s2">
+        <img src="images/2frontcoverhat.jpg" alt="slideshow hat 2" width="100%" height="260">
+      </div>
+      <div class="swiper-slide s3">
+        <img src="images/3frontcoverhat.jpg" alt="slideshow hat  3" width="100%" height="260">
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<main>
+  <section id="arrivals">
+    <h2>Newest Arrivals</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Classy Fedora</h3>
+        <img src="images/iconFedora.jpg" alt="Fedora" width="200" height="200">
+        <p>$99</p>
+        <a class="btn" href="#">View</a>
+      </div>
+      <div class="card">
+        <h3>OG Flatcap</h3>
+        <img src="images/iconFlatcap.jpg" alt="Flatcap" width="200" height="200">
+        <p>$67</p>
+        <a class="btn" href="#">View</a>
+      </div>
+      <div class="card">
+        <h3>Sedona's Special</h3>
+        <img src="images/iconWestern.jpg" alt="Western Hat" width="200" height="200">
+        <p>$69</p>
+        <a class="btn" href="#">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="collections">
+    <h2>Collections</h2>
+    <img class="collections-banner" src="images/NEWcoverhat.jpg" alt="Collections Background" width="900" height="250">
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Fedora</h3>
+        <a class="btn" href="#">Shop Fedora</a>
+      </div>
+      <div class="card">
+        <h3>Flatcap</h3>
+        <a class="btn" href="#">Shop Flatcaps</a>
+      </div>
+      <div class="card">
+        <h3>Western</h3>
+        <a class="btn" href="#">Shop Western</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to the biggest hat retailer in Arizona, Heritage Hats! For residents, visitors, as well as hat enthusiasts across the country, we provide hats that are both custom-made or branded. In addition to hat bands and accessories to customize your style, we have westerns, fedoras, Panamas, Australians, Kangols, pig pies, derbies, top hats, and flat caps.
+To keep your favorites in great condition, we also provide hat restoration, cleaning, and blocking services. Many designs provide very comfortable solutions for patients receiving radiation or chemotherapy, as well as UPF 50+ sun protection.
+At Heritage Hats, we think that hats combine protection, style, along with tradition. To locate the ideal hat for you, stop by our Phoenix location or browse our website.</p>
+  </section>
+
+  <section id="reviews">
+    <h2>What Customers Say</h2>
+
+    <div class="swiper myReviews">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide s1">
+          <img src="images/newreview1.png" alt="Customer 1 Review" width="100%" height="250">
+        </div>
+        <div class="swiper-slide s2">
+          <img src="images/newreview2.png" alt="Customer 2 Review" width="100%" height="250">
+        </div>
+        <div class="swiper-slide s3">
+          <img src="images/newreview3.png" alt="Customer 3 Review" width="100%" height="250">
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="card card--mt12">
+      <h3>Subscribe for Updates</h3>
+      <form onsubmit="event.preventDefault(); alert('Thanks!');">
+        <input type="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer id="visit">
+  <div class="grid-2">
+    <div>
+      <h3>Visit Us</h3>
+      <p>13602 N Cave Creek Road<br>Phoenix, Arizona 85022<br>602-867-3323</p>
+      <p>Mon - Sat 10AM TO 5PM</p>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <p>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+        <a href="https://www.facebook.com/HeritageHatshop/" target="_blank">Facebook</a> ·
+        <a href="https://www.tiktok.com/explore" target="_blank">TikTok</a> ·
+        <a href="https://www.youtube.com/watch?v=7xWzwiov-8I" target="_blank">YouTube</a> ·
+        <a href="https://x.com" target="_blank">Twitter</a>
+      </p>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Heritage Hats</p>
+</footer>
+
+<!-- Swiper & scripts -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function mobileMenuToggle() {
+    var x = document.getElementById("myLinks");
+    x.style.display = (x.style.display === "block") ? "none" : "block";
+  }
+
+  new Swiper('.myHero', {
+    loop: true,
+    autoplay: { delay: 2500 },
+    pagination: { el: '.myHero .swiper-pagination', clickable: true },
+    navigation: { nextEl: '.myHero .swiper-button-next', prevEl: '.myHero .swiper-button-prev' }
+  });
+
+  new Swiper('.myReviews', {
+    loop: true,
+    autoplay: { delay: 3000 },
+    pagination: { el: '.myReviews .swiper-pagination', clickable: true },
+    navigation: { nextEl: '.myReviews .swiper-button-next', prevEl: '.myReviews .swiper-button-prev' }
+  });
+</script>
+</body>
+</html>
+
