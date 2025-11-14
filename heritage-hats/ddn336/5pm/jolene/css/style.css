@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "EB Garamond", serif;
+}
+
+/* Navbar */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #1c2957;
+    font-weight: 500;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: left;
+    margin-top: 90px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f0e0;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.about-image img {
+    width: 350px;
+    border-radius: 8px;
+}
+
+/* Picks */
+#picks {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#picks h2 {
+    color: #1c2957;
+    margin-bottom: 2rem;
+}
+
+/* Hat Care */
+.hat-care {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.care-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.care-grid img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Products */
+/* Products Section */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 2rem;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+.product {
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 280px;
+    /* makes each card smaller */
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    max-width: 220px;
+    /* smaller image size */
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact form*/
+.contact-section {
+    background-color: #e5d3b3;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-box input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #a36b3f;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: #FFF7D9;
+    padding: 60px 20px;
+    margin-top: 40px;
+    /* spacing above section */
+}
+
+.contact-info-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* space between logo and text */
+}
+
+.contact-logo {
+    width: 260px;
+    /* bump up the circle size */
+    height: 260px;
+    /* force it into a perfect circle */
+    padding: 25px;
+    /* adds space around the logo INSIDE the circle */
+    background-color: #fff;
+    border-radius: 50%;
+    /* keeps it circular (I think)*/
+    object-fit: contain;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #f6f0e0;
+    color: #444;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}

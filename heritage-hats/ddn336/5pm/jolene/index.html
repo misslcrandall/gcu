@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Hats</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qmx0kqs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/heritagehat_logo2.jpg" alt="Heritage Hats logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#picks">Hats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>HERITAGE HATS</h1>
+                <h3>Hats that keep Arizona Covered!</h3>
+            </div>
+            <img src="images/back_hat_unsplash.jpg" alt="Main banner hat" class="hero-img">
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about content-wrap">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Founded in 1983, Heritage Hats is the largest hat store in Arizona...
+                    with a large variety of hats including Western felt and straws, fedora felt and straws, panamas, Australians, and other
+                    popular hats and caps. Our retail space covers 3,200 square feet with two showrooms. Our restoration workshop is in the
+                    back of the store, where we continue to do cleaning and blocking on the premises. We also custom-make hats!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/tan_model_unsplash.jpg" alt="Model with hat">
+            </div>
+        </section>
+
+        <!-- Picks Section -->
+        <section id="picks" class="content-wrap">
+            <h2>Most Popular Picks!</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/hat_on_dash.png" alt="Cowboy Hat"></div>
+                    <div class="swiper-slide"><img src="images/plainhat.avif" alt="Plain Hat"></div>
+                    <div class="swiper-slide"><img src="images/grey_felt.avif" alt="Grey Hat"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Hat Care -->
+        <section id="hat-care" class="hat-care content-wrap">
+            <h2>Hat Care & More!</h2>
+            <div class="care-grid">
+                <img src="images/product_closeup-unsplash.jpg" alt="">
+                <img src="images/vowgirl-unsplash.jpg" alt="">
+                <img src="images/loneunsplash.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section id="products" class="content-wrap">
+            <h2>Other Products You Might Like!</h2>
+            <div class="products-container">
+                <div class="product card">
+                    <img src="images/tailgate_hat.avif" alt="Grey Felt Hat">
+                    <h4>Grey Felt Hat</h4>
+                </div>
+                <div class="product card">
+                    <img src="images/plainhat.avif" alt="Summer Hat">
+                    <h4>Women's Outdoor Summer Hat</h4>
+                </div>
+                <div class="product card">
+                    <img src="images/grey_felt.avif" alt="Light Grey Felt">
+                    <h4>Light Grey Felt</h4>
+                </div>
+                <div class="product card">
+                    <img src="images/mens_straw_hat.avif" alt="Straw Hat">
+                    <h4>Straw Hat with Feather Accent</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact FORM -->
+        <section id="contact" class="contact-section">
+            <div class="contact-box">
+                <h2>Contact Form </Form></h2>
+                <form>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Your name">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Your email">
+                    <label>Message:</label>
+                    <textarea rows="4" placeholder="Write your message..."></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+<!--Add Contact Us Info Here-->
+<section class="contact-info">
+    <div class="contact-info-container">
+
+        <img src="images/heritagehat_logo2.jpg" alt="Heritage Hats Logo" class="contact-logo">
+
+        <div class="contact-details">
+            <h2>Contact Us:</h2>
+
+            <p><strong>Phone:</strong> (556)345-7792</p>
+            <p><strong>Email:</strong> HeritageHats123@aol.com or HeritageHatsLocalStore@aol.com</p>
+            <p><strong>Instagram:</strong> @HeritageHatsArizona</p>
+            <p><strong>Facebook:</strong> Heritage_HatsAZ</p>
+            <p><strong>Location:</strong> 2244 South Road Scottsdale AZ</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <footer id="footer">
+        <p>&copy; 2025 Heritage Hats. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination' },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+    </script>
+</body>
+
+</html>

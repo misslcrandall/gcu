@@ -1,10 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    font-family: "Inter";
+    font-size: 1.68rem;
+    background-color: #261701;
+    margin: 0;
+    padding: 0;
+}
 /*nav start*/
 nav
 {
     font-family: "roboto";
     font-size: 2.25rem;
+}
+
+header
+{
+    background: linear-gradient(180deg, #261701 0%, #593706 100%);
 }
 
 header nav /*keeps the nav bar at the top of the screen*/
@@ -34,11 +52,18 @@ header nav ul a /*to change the way the linked buttons work*/
     text-decoration: none;
 }
 /*nav end*/
-
+main{
+    max-width: 1340px;
+    padding: 1rem;
+    background-color: #fff4e3;
+    border-radius: 16px;
+    margin: 0 auto;
+}
 /*About Us Section*/
 .about /*about set up (can use for the FaQ)*/
 {
     background-color: #261701;
+    background: linear-gradient(180deg, #593706 0%, #E6D5BC 70.67%, #FFF 100%);
 }
 
 .about .aboutInner
@@ -56,7 +81,13 @@ header nav ul a /*to change the way the linked buttons work*/
     background-color: #E6D5BC;
 }
 /*About Us End*/
+/*Store Start*/
 
+.hatSwiper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*FaQ Start*/
 .faq .faqInside /*faq style start*/
 {
@@ -82,16 +113,6 @@ header nav ul a /*to change the way the linked buttons work*/
     max-width: 50%;
     height: auto;
     background-color: #D9D9D9;
-}
-body
-{
-    font-family: "Inter";
-    font-size: 1.68rem;
-    background-color: #261701;
-}
-html
-{
-    font-size: 16px;
 }
 
 h1
@@ -149,7 +170,7 @@ img{
 /* Backgrounds */
 .storeWhiteBackgroundColor
 {
-    background-color:#F5F5F5
+    background-color:#FFFFFF;
 }
 .faqBlueBackgroundColor
 {
@@ -162,6 +183,9 @@ img{
 @media screen and (max-width:900px) 
 {
     .aboutInner{
+        flex-direction: column;
+    }
+    .faqInside{
         flex-direction: column;
     }
 }
