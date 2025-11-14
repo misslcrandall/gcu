@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage Hats</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Font Awesome for Hamburger -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Heritage Hats</div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menu Items -->
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events & Conventions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hatcare">Hat Care Tips</a></li>
+            <li><a href="#restoration">Restoration Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>Hats That Keep You Covered</h1>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Featured Products</h2>
+    <div class="container">
+        <div class="card">
+            <img src="images/panamahatsize.png" alt="Panama Hat">
+            <h3>Panama Hats</h3>
+        </div>
+        <div class="card">
+            <img src="images/browncowboyhat.png" alt="Australian Outback Hat">
+            <h3>Australian Outback & Hiking Hats</h3>
+        </div>
+        <div class="card">
+            <img src="images/whitefedora.png" alt="Fedora Hat">
+            <h3>Fedora Straw Hats</h3>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Our Heritage</h2>
+    <div class="container">
+        <div class="image-box">
+            <img src="images/FEDORA.png" alt="Fedoras">
+        </div>
+        <div class="text-box">
+            <p>The name Heritage Hats was born because I wanted a name that would express my passion to learn and carry on a skill and tradition about the way of life and the traditional culture of the southwest. I moved to Phoenix from Rockford, Illinois in 1981 and became infatuated with the western lifestyle...</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="container">
+        <div class="card">
+            <img src="images/whitetestimonial.png" alt="testimonial1">
+            <p>"I love the customer service and quality of Heritage Hats" - Rodney</p>
+        </div>
+        <div class="card">
+            <img src="images/browntestimonial.png" alt="testimonial2">
+            <p>"Stays on well while riding horses. I love it!" - Casera</p>
+        </div>
+        <div class="card">
+            <img src="images/captestimonial.png" alt="testimonial3">
+            <p>"Traditional and comfortable. Best of both worlds!" - Stan</p>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+    <h2>Events & Convention Services</h2>
+    <div class="container">
+        <img src="images/convention1.png" alt="Event1">
+        <img src="images/convention2.png" alt="Event2">
+        <img src="images/convention3.png" alt="Event3">
+    </div>
+</section>
+
+<!-- HAT CARE -->
+<section id="hatcare">
+    <h2>Hat Care Tips</h2>
+    <div class="container">
+        <div class="card">
+            <h3>General Tips</h3>
+            <p>At Heritage Hats, we know buying a hat is an investment...</p>
+        </div>
+        <div class="card">
+            <h3>For Felt Hats</h3>
+            <ul>
+                <li>Do not handle the crown directly.</li>
+                <li>Do not set your hat down on the brim.</li>
+                <li>Keep away from heat.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>For Straw Hats</h3>
+            <ul>
+                <li>Wipe with a soft cloth dipped in mild soap solution.</li>
+                <li>Rinse and air dry.</li>
+                <li>Do not soak the hat.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- RESTORATION -->
+<section id="restoration">
+    <h2>Restoration Services</h2>
+    <div class="container">
+        <div class="card">
+            <img src="images/HAT TIP PHOTO.png" alt="Restoration">
+            <ul>
+                <li>Dry cleaning, re-blocking, and sweatband replacement.</li>
+                <li>Cleaning & blocking: $60, Re-shaping crown: $25</li>
+                <li>Re-shaping brim: $20, Sweatband replacement: $45</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>Subscribe to our newsletter</h2>
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</footer>
+
+<!-- JS for Hamburger -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

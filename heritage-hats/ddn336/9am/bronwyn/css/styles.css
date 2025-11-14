@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{
+    color: #000000;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "BBH Sans Hegarty"
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30pt;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+
+.topbar-nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.topbar-nav ul{
+    background-color:white;
+    color: rgb(7, 7, 70);
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 16px;
+}
+
+.topbar-nav img{
+    max-width: 215px;
+}
+
+.hero{
+    background-image: url(../images/hero-image.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.hero-text{
+    text-align: left;
+    color: white;
+    font-size: 15pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*card row*/
+.card-row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.card{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrap{
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+p{
+    color:black;
+    font-size: 12pt;
+    font-family:'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.tagline{
+    text-align: center;
+    padding: 40px;
+    color: tan;
+}
+
+.two-col-layout{
+    display: flex;
+    gap: 20px;
+}
+
+.img{
+    align-items: center;
+}
+
+.content-inner{
+    padding: 32px 24px;
+}
+
+.about-img{
+    height: 400px;
+    width: auto;
+}
+
+.about-us-styles{
+    background-color:tan;
+    padding:32px 24px;
+    display:flex;
+}
+
+@media screen and (max-width: 600px) {
+    .two-col-layout{
+        flex-direction: column;
+    }
+    .two-col-layout .column{
+        width: 100%;
+    }
+}

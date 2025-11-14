@@ -1,0 +1,387 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #012459;
+    color: white;
+    height: 118px;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerlogo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+}
+
+.headerlogo img{
+    margin-left: 10px;
+}
+
+.headerlogo h1 {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.headernav ul {
+    list-style-type: none;
+    float: center;
+    text-align: center;
+
+}
+
+.headernav li {
+    display: inline-block;
+    margin-inline: 3.75em;
+}
+
+.headernav li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+}
+
+.headericons {
+    margin-right: 25px;
+}
+
+.headericons a {
+    display: inline-block;
+    padding: 45px;
+}
+
+/* Hero Image */
+
+.herostuff {
+    background-image: url(../images/landscape_photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herotext {
+    max-width: 456px;
+    
+    color: white;
+}
+
+.herotext h2 {
+    font-family: "Merriweather", serif;
+    font-size: 3.4375rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.herotext p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+    margin-bottom: 30px;
+}
+
+.herotext button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 23px 47px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.331rem;
+    background-color: #012459;
+    cursor: pointer;
+}
+
+.herotext button a {
+     color: white;
+    text-decoration: none;
+}
+
+
+/* Popular Hats */
+.hat-listing {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.hat-listing .headingsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      margin-top: 120px;
+}
+.hat-listing h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2.1669rem;
+    font-weight: bold;
+}
+
+.hat-listing a {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.hat-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hatitemtext p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+}
+
+
+/* About Us */
+
+.aboutus-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    margin-top: 120px;
+    margin-right: 40px;
+    margin-left: 40px;
+    align-items: stretch;
+}
+
+.aboutus-img {
+    background-image: url(../images/shop_owner_cropped.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.aboutus-text {
+    background-color: #DABC94;
+    padding-top: 43px;
+    padding-right: 40px;
+    padding-left: 40px;
+    max-width: 50%;
+}
+
+.aboutus-text h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2.1669rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.aboutus-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+}
+
+.p1 {
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+
+.p2 {
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+
+/* FAQ */
+
+.faq-stuff {
+    max-width: 1049px;
+    margin:0 auto;
+}
+
+.faq-stuff h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2.1669rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+details{
+    background-color: #DABC94;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+}
+details > summary {
+    cursor: pointer;
+    padding: 45px;
+}
+details .faq-inner{
+    padding: 45px;
+}
+
+/* Reviews */
+
+.reviews h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2.1669rem;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.review-text {
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ced4de;
+}
+.review-text h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+    font-weight: medium;
+}
+
+.review-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+}
+
+/* Footer */
+
+.footerstuff {
+    background-color: #012459;
+    color: white;
+    margin-top: 100px;
+}
+
+.footerline h2 {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 2.1669rem;
+    font-weight: bold;
+}
+
+.footerflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.footerdirections p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+}
+
+.footerlogo h2 {
+    font-family: "Merriweather", serif;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.footeremail p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2081rem;
+}
+
+/* Media Queries */
+
+/* from a max width of 992px and smaller */
+@media (max-width: 992px) {
+    header {
+        height: 100px;
+    }
+
+    .headerlogo img {
+        width: 65px;
+    }
+
+    .headerlogo h1 {
+        font-size: 0.9169rem;
+    }
+
+    .headernav li {
+        margin-inline: 1.2081em;
+    }
+
+    .headernav li a {
+        font-size: 1.125rem;
+    }
+
+    .herotext {
+        left: 25%;
+        width: 370px;
+    }
+
+    .herotext h2 {
+        font-size: 2.6669rem;
+    }
+
+    .herotext p {
+        font-size: 1.125rem;
+    }
+
+    .herotext button {
+        padding: 20px 44px;
+        font-size: 1.2081rem;
+    }
+
+    .hat-listing h2 {
+        font-size: 2rem;
+    }
+
+    .hat-listing a {
+        font-size: 1.125rem;
+    }
+
+    .aboutus-content {
+        flex-direction: column;
+    }
+    .aboutus-text {
+        max-width: 100%;
+    }
+    .aboutus-img {
+         width: 75%;
+        margin: 0 auto;
+        aspect-ratio: 250 / 306;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .aboutus-img {
+        height: unset;
+        
+    }
+
+}
+/* Tables */
+
+/* Containers */

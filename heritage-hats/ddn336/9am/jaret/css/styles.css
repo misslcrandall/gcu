@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Add any Fonts */
+
+/* Headings */
+
+/* Header */
+.mobile-nav{
+    display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+.hero-image{
+    max-width: 100%;
+    height: auto;
+    line-height: 78px;
+    background-image: url("../images/Hero.png");
+    height: 100%;
+    padding: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+/* Text */
+
+/* Lists */
+
+/* Links */
+
+/* Backgrounds */
+body{
+    background-color: #EDEDE1;
+    font-family: sans-serif;
+    margin: 20px auto;
+    padding: 0px 20px;
+    max-width: 1280px;
+    min-width: auto;
+    justify-content: center;
+    justify-content: flex-start;
+}
+
+.topbar-nav{
+    background-color: #FF9500;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-top: 36px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    gap: 10px;
+    min-width: auto;
+}
+
+.topbar-nav img{
+    max-width: 215px;
+    min-width: auto;
+    justify-content: flex-start;
+}
+
+.topbar-nav ul{
+    background-color: navy;
+    color: white;
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.background-navy{
+    background-color: navy;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 50px;
+}
+
+.background-orange{
+    background-color: #FF9500;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Navigation Breakpoint */
+@media screen and (max-width: 1280px){
+.desktop-nav{
+    display: none;
+}
+
+header .mobile-nav{
+        display: block;
+    }
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 600px){
+    .two-col-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+.two-col-layout.column{
+    width: 100%;
+}
+/* Tables */
+
+/* Containers */
+
+
