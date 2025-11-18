@@ -80,6 +80,8 @@ header nav {
 
 .herotext {
     max-width: 456px;
+    padding-left: 40px;
+    padding-right: 40px;
     
     color: white;
 }
@@ -113,11 +115,14 @@ header nav {
     text-decoration: none;
 }
 
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 /* Popular Hats */
 .hat-listing {
-    padding-left: 40px;
-    padding-right: 40px;
+
 }
 .hat-listing .headingsection{
     display: flex;
@@ -163,8 +168,6 @@ header nav {
     justify-content: space-around;
     gap: 70px;
     margin-top: 120px;
-    margin-right: 40px;
-    margin-left: 40px;
     align-items: stretch;
 }
 
@@ -210,6 +213,7 @@ header nav {
 .faq-stuff {
     max-width: 1049px;
     margin:0 auto;
+    padding-top: 60px;
 }
 
 .faq-stuff h2 {
@@ -252,13 +256,13 @@ details .faq-inner{
 }
 
 .review-text {
-    margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     background-color: #ced4de;
+    padding: 20px;
 }
 .review-text h3 {
     font-family: "Montserrat", sans-serif;
@@ -335,8 +339,7 @@ details .faq-inner{
     }
 
     .herotext {
-        left: 25%;
-        width: 370px;
+        max-width: 370px;
     }
 
     .herotext h2 {
@@ -371,7 +374,9 @@ details .faq-inner{
         margin: 0 auto;
         aspect-ratio: 250 / 306;
     }
-
+    .footerflex {
+        flex-direction:column;
+    }
 }
 
 
